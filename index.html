@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profit Loss Managment</title>
+</head>
+
+<body>
+    <div class="heading">
+        <h2>Profit Loss Management System</h2>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="card green">
+            <h3>Total Income:</h3>
+            <h2 id="totalIncome">0</h2>
+        </div>
+        <div class="card red">
+            <h3>Total Expense:</h3>
+            <h2 id="totalExpense">0</h2>
+        </div>
+        <div class="card blue">
+            <h3>Total profit:</h3>
+            <h2 id="totalProfit">0</h2>
+        </div>
+
+        <form onsubmit="getItems(); return false">
+            <label for="ItemName">
+                Items
+                <input type=" text" id="ItemName" placeholder="Enter Items">
+
+            </label>
+            <br>
+            <label for="Amount">
+                Amount
+                <input type=" text" id="Amount" placeholder="Enter Amount">
+            </label>
+            <br>
+            <br>
+            <button type="submit">
+                Add
+            </button>
+        </form>
+
+        <div id="listDetail">
+        </div>
+
+    </div>
+
+    <script src="script.Js"></script>
+</body>
+
+</html>
