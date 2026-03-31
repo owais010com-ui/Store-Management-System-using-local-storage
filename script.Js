@@ -102,3 +102,10 @@ function printData() {
 
     document.getElementById("listDetail").innerHTML = html;
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("itemForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        getItems();
+    });
+});
